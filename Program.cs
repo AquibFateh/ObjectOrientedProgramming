@@ -1,4 +1,6 @@
-﻿namespace ObjectOrientedProgramming
+﻿using ObjectOrientedProgramming.Abstraction;
+
+namespace ObjectOrientedProgramming
 {
     /// <summary>
     /// Program class.
@@ -7,7 +9,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            EmailService emailService = new EmailService();
+
+            emailService.SendEmail();
         }
     }
 }
